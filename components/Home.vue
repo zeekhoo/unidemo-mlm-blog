@@ -89,11 +89,12 @@
           June 5th 2019
         </div>
         <div class="container">
-          <img src="https://s3-us-west-2.amazonaws.com/beachbody-blog/uploads/2020/03/PF-v-UPF.960.v2.jpg" style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
+          <img src="https://ak1.picdn.net/shutterstock/videos/32375701/thumb/6.jpg" 
+            style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
         </div>
       
         <h2 style="color: #2c3e50;font-size: 2.0rem">
-          Portion Fix vs. Ultimate Portion Fix: What's the Difference?
+          Keto made me a better programmer. No really!
         </h2>
 
         <div v-if="this.$parent.authenticated">
@@ -107,7 +108,8 @@
           <p>Autumn has refined and clarified her portion-control approach to teach you and your family — including your kids! — how to eat delicious, healthy portions for good.</p>
           <p>Check out this handy chart below for a quick comparison:</p>
 
-          <img src="https://s3-us-west-2.amazonaws.com/beachbody-blog/uploads/2020/03/Portion-Fix-v-Ultimate-Portion-Fix.PIN_.jpg" style="width: 100%;">
+          <img src="https://media.istockphoto.com/videos/keto-diet-stop-motion-video-id938317614?s=640x640" 
+            style="width: 100%;">
 
           <p>And that’s just the beginning — you can read more about everything you get with the Ultimate Portion Fix here.</p>
           <p>Bottom line: Ultimate Portion Fix is a nutrition program that can help you gain a deeper understanding of nutrition and what it means to eat healthy.</p>

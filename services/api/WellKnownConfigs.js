@@ -22,6 +22,9 @@ export default {
 				result.client2_id=data.settings.client2_id || '';
 			}
 			return result;
+		})
+		.catch((err)=>{
+			return false;
 		});
 	}
 }
