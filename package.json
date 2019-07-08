@@ -1,0 +1,22 @@
+{
+  "name": "vue-unidemo-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zeekhoo-okta",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/okta-auth-js": "^2.5.0",
+    "@okta/okta-signin-widget": "^2.19.0",
+    "@okta/okta-vue": "^1.1.0",
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "semantic-ui-css": "^2.4.1",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6"
+  },
+  "devDependencies": {}
+}
