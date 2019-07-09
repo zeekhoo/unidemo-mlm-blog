@@ -43,11 +43,12 @@ const onAuthRequired = async (from, to, next) => {
 
     if (!isRunningLocal) {
       const data = await WellKnownConfigs.getWellKnownConfigs(subdomain)
+      const redirect_uri = data.redirect_uri.split('.bod.')[0] + '.bodblog.unidemo.live/implicit/callback'
       if (data) {
         oktaAuthConfig.base_url=data.okta_org_name
         oktaAuthConfig.oidc.issuer=data.issuer
         oktaAuthConfig.oidc.client_id=data.client2_id
-        oktaAuthConfig.oidc.redirect_uri=data.redirect_uri.split('.bod.')[0] + '.bod-blog.unidemo.live/implicit/callback'
+        oktaAuthConfig.oidc.redirect_uri=redirect_uri
       }
     } 
 
