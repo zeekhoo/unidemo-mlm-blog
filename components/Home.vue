@@ -26,7 +26,7 @@
           June 6th 2019
         </div>
 
-        <img src="https://us.123rf.com/450wm/scyther5/scyther51703/scyther5170300058/73650702-cooking-food-kitchen-cutting-cook-hands-man-male-knife-preparation-fresh-preparing-hand-table-salad-.jpg?ver=6" 
+        <img src="https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo2.jpg" 
           style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
 
         <h2 style="color: #2c3e50;font-size: 2.0rem">
@@ -52,7 +52,7 @@
         <div class="date" style="text-transform: uppercase;color: #3498db;letter-spacing: 0.2rem;">
           June 5th 2019
         </div>
-        <img src="https://ak1.picdn.net/shutterstock/videos/32375701/thumb/6.jpg" 
+        <img src="https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo4.jpg" 
           style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
         <h2 style="color: #2c3e50;font-size: 2.0rem">
           Keto made me a better programmer. No really!
@@ -105,16 +105,15 @@ export default {
       ],
       blog2: [
         {text: 'If you’ve ever done a NITRO online program, you know the 7 color-coded keto hacks are #LIFE.', style: 'border-left: 5px solid #bdc3c7;padding-left: 5px;'},
-        {text: 'And by now, you’ve probably heard about the new Ultimate Keto Hack* nutrition program thats turning regular Joes into super-coders.', style: ''},
+        {text: 'And by now, you’ve probably heard about the new Ultimate Keto Hack* nutrition program thats turning regular Joes into Super Coders.', style: ''},
         {text: 'But you’re probably asking, “What’s the difference between regular Keto and Ultimate Keto Hack?"', style: ''}, 
-        {text: 'Ultimate Keto Hack is the gateway to the 4-hour body; plus 30-day nutrition program with ultra quick diet hacks, meal preps, tracking tools, thousands of code tricks, and more.', style: ''},
+        {text: 'Ultimate Keto Hack is the gateway to the 4-hour body; Get ripped and code better at the same time. Its a 30-day nutrition program with ultra quick diet hacks, meal preps, tracking tools, thousands of code tricks, and more.', style: ''},
         {text: 'Think of it like this: Ultimate Keto Hack takes body hacking to another level with a billion nutrition hacks, a zillion support tools, and a gazillion options.', style: ''},
-        {text: 'Our body hackers have refined and clarified the portiion hack* approach to teach you and your family — including your kids! — how to hack your way to delicious, healthy portions for good.', style: ''},
-        {text: 'Check out this handy chart below for a quick comparison:', style: ''},
-        {text: '', img: 'https://media.istockphoto.com/videos/keto-diet-stop-motion-video-id938317614?s=640x640', style: ''},
+        {text: 'Our body hackers have refined and clarified the portion hack* approach to teach you and your family — including your kids! — how to hack your way to shirt shredding, code ripping lifestyle.', style: ''},
+        {text: '', img: 'https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo3.jpg', style: ''},
         {text: 'And that’s just the beginning — you can read more about everything you get with the Ultimate Keto Hack here, here and here!', style: ''},
-        {text: 'Bottom line: Ultimate Keto Hack is a nutrition program that can help you hack into a deeper understanding of nutrition and what it means to heack healtily.', style: ''},
-        {text: 'With the information, strategies, and mind Jujitsu hacks that Ultimate Keto Hack provides, you’ll be able to hack code like never before.', style: ''}
+        {text: 'Bottom line: Ultimate Keto Hack is a nutrition program that can help you hack into a deeper understanding of nutrition and what it means to hack like a monster that you are.', style: ''},
+        {text: 'With the information, strategies, and mind Jujitsu hacks that Ultimate Keto Hack provides, you’ll be able to live that hacker life you dreamed of.', style: ''}
       ]
     }
   },
