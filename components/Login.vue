@@ -28,7 +28,7 @@ export default {
 
       this.widget.session.get((res)=> {
         if (res.status === 'ACTIVE') {
-          this.$auth.loginRedirect("/", {})
+          this.$auth.loginRedirect("/", {state: 'foo'})
         } else {
           this.widget.renderEl(
             { el: '#okta-signin-container' },

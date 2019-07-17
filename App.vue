@@ -39,7 +39,9 @@
 export default {
   name: 'app',
   data: function () {
-    return { authenticated: false }
+    return { 
+      authenticated: false
+    }
   },
   created () { this.isAuthenticated() },
   watch: {
