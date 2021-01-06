@@ -3,7 +3,7 @@ import oktaAuthConfig from '../../.config.js'
 
 export default {
 	getWellKnownConfigs(subdomain) {
-		const path = 'https://' + oktaAuthConfig.udp_api + '/api/configs/' + subdomain  + '/bod/.well-known/default-setting';
+        const path = 'https://' + oktaAuthConfig.udp_api + '/api/configs/' + subdomain  + '/bod/.well-known/default-setting';
 		return axios.get(path)
 		.then((res) => {
 			var result = {

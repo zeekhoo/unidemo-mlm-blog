@@ -10,13 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@okta/okta-auth-js": "^2.5.0",
-    "@okta/okta-signin-widget": "^2.19.0",
+    "@okta/okta-signin-widget": "^5.2.1",
     "@okta/okta-vue": "^1.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "semantic-ui-css": "^2.4.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
-  },
-  "devDependencies": {}
+  }
 }
