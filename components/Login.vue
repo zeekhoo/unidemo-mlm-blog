@@ -28,7 +28,9 @@ export default {
 
       this.widget.authClient.session.exists().then(exists => {
         if (exists) {
-          this.widget.authClient.token.getWithoutPrompt()
+          this.widget.authClient.token.getWithoutPrompt({
+            scopes: ['openid', 'profile', 'email']
+          })
           .then(res=>{
             if (res.tokens) {
               this.$auth.handleLoginRedirect(res.tokens);
