@@ -2,11 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import 'semantic-ui-css/semantic.min.css'
 
-import Auth from '@okta/okta-vue'
-
 import HomeComponent from '../components/Home'
 import LoginComponent from '../components/Login'
 import WellKnownConfigs from '../services/api/WellKnownConfigs'
+
+// import Auth from '@okta/okta-vue'
+import OktaVue from '@okta/okta-vue'
+import { OktaAuth } from '@okta/okta-auth-js'
+import OAuthCallback from '../components/OAuthCallback'
+
 
 var subdomain = window.location.host.split('.')[0]
 var isRunningLocal = false
@@ -31,7 +35,7 @@ const router = new Router({
     },
     {
       path: '/implicit/callback',
-      component: Auth.handleCallback()
+      component: OAuthCallback
     } 
   ]
 })
@@ -51,20 +55,21 @@ const onAuthRequired = async (from, to, next) => {
         oktaAuthConfig.oidc.redirect_uri=redirect_uri
       }
     } 
-
-    Vue.use(Auth, {
+    const oktaAuth = new OktaAuth({
       issuer: oktaAuthConfig.oidc.issuer,
-      client_id: oktaAuthConfig.oidc.client_id,
-      redirect_uri: oktaAuthConfig.oidc.redirect_uri,
-      scope: 'openid profile email'
+      clientId: oktaAuthConfig.oidc.client_id,
+      redirectUri: oktaAuthConfig.oidc.redirect_uri,
+      scopes: ["openid", "profile", "email"],
+      pkce: true
+    })
+    Vue.use(OktaVue, {
+      oktaAuth,
+      onAuthRequired: () => {
+        router.push({ path: '/login' })
+      }
     })
   }
-
-  if (from.matched.some(record => record.meta.requiresAuth) && !(await Vue.prototype.$auth.isAuthenticated())) {
-    next({ path: '/login' })
-  } else {
-    next()
-  }
+  next();
 }
 
 router.beforeEach(onAuthRequired)

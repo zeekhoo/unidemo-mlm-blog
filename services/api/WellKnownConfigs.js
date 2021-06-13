@@ -23,7 +23,7 @@ export default {
 			}
 			return result;
 		})
-		.catch((err)=>{
+		.catch(()=>{
 			return false;
 		});
 	}

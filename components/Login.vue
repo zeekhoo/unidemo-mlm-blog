@@ -5,9 +5,8 @@
 </template>
 
 <script>
-import OktaSignIn from '@okta/okta-signin-widget'
-import '@okta/okta-signin-widget/dist/css/okta-sign-in.min.css'
-import '@okta/okta-signin-widget/dist/css/okta-theme.css'
+import OktaSignIn from "@okta/okta-signin-widget";
+import "@okta/okta-signin-widget/dist/css/okta-sign-in.min.css";
 import authConfig from '../.config.js'
 
 export default {
@@ -19,28 +18,32 @@ export default {
         clientId: authConfig.oidc.client_id,
         redirectUri: authConfig.oidc.redirect_uri,
         authParams: {
-          responseType: ['id_token', 'token'],
+          responseType: ['code'],
+          pkce: true,
           issuer: authConfig.oidc.issuer,
           scopes: ['openid', 'profile', 'email'],
           display: 'page'
         }
       })
 
-      this.widget.session.get((res)=> {
-        if (res.status === 'ACTIVE') {
-          this.$auth.loginRedirect("/", {state: 'foo'})
+      this.widget.authClient.session.exists().then(exists => {
+        if (exists) {
+          this.widget.authClient.token.getWithoutPrompt()
+          .then(res=>{
+            if (res.tokens) {
+              this.$auth.handleLoginRedirect(res.tokens);
+            }
+          })
         } else {
           this.widget.renderEl(
-            { el: '#okta-signin-container' },
-            () => {
-
-            },
-            (err) => {
-              throw err
+            { el: "#okta-signin-container" },
+            () => {},
+            err => {
+              throw err;
             }
-          )
+          );
         }
-      })
+      });
     })
   },
   destroyed () {

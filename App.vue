@@ -57,8 +57,8 @@ export default {
       }
     },
     async logout () {
-      await this.$auth.logout()
-      await this.isAuthenticated()
+      await this.$auth.signOut();
+      await this.isAuthenticated();
     }
   }
 }
