@@ -26,7 +26,7 @@
           June 6th 2019
         </div>
 
-        <img src="https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo2.jpg" 
+        <img :src="require('../assets/img/unidemo2.jpg')" 
           style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
 
         <h2 style="color: #2c3e50;font-size: 2.0rem">
@@ -52,7 +52,7 @@
         <div class="date" style="text-transform: uppercase;color: #3498db;letter-spacing: 0.2rem;">
           June 5th 2019
         </div>
-        <img src="https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo4.jpg" 
+        <img :src="require('../assets/img/unidemo4.jpg')"
           style="width:100%;margin-top: 10px;opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;"> 
         <h2 style="color: #2c3e50;font-size: 2.0rem">
           Keto made me a better programmer. No really!
@@ -63,7 +63,7 @@
             :style="p.style"
             >
             {{p.text}}
-            <img v-if="p.img" :src="p.img" style="width: 100%;">
+            <img v-if="p.img" :src="require('../assets/img/unidemo3.jpg')" style="width: 100%;">
           </p>
           <p style="font-weight: bold; font-size: 1.2rem;color: #3498db;text-transform: uppercase;margin">
           Comments:
@@ -110,7 +110,7 @@ export default {
         {text: 'Ultimate Keto Hack is the gateway to the 4-hour body; Get ripped and code better at the same time. Its a 30-day nutrition program with ultra quick diet hacks, meal preps, tracking tools, thousands of code tricks, and more.', style: ''},
         {text: 'Think of it like this: Ultimate Keto Hack takes body hacking to another level with a billion nutrition hacks, a zillion support tools, and a gazillion options.', style: ''},
         {text: 'Our body hackers have refined and clarified the portion hack* approach to teach you and your family — including your kids! — how to hack your way to shirt shredding, code ripping lifestyle.', style: ''},
-        {text: '', img: 'https://d2bg6xcfalpw34.cloudfront.net/bodblog/img/unidemo3.jpg', style: ''},
+        {text: '', img: "../assets/img/unidemo3.jpg", style: ''},
         {text: 'And that’s just the beginning — you can read more about everything you get with the Ultimate Keto Hack here, here and here!', style: ''},
         {text: 'Bottom line: Ultimate Keto Hack is a nutrition program that can help you hack into a deeper understanding of nutrition and what it means to hack like a monster that you are.', style: ''},
         {text: 'With the information, strategies, and mind Jujitsu hacks that Ultimate Keto Hack provides, you’ll be able to live that hacker life you dreamed of.', style: ''}
